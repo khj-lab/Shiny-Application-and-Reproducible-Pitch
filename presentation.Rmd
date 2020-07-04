@@ -1,0 +1,46 @@
+---
+title: 'Course Project: Shiny Application and Reproducible Pitch'
+author: "Hiroshi Kamijo"
+date: "`r format(Sys.time(), '%Y/%m/%d')`"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## About This Project
+
+This project is a deliverable for the course Developing Data Products as part of the Coursera Data Science Specialization by Johns Hopkins University.
+
+The outline of the assignment is as follows.
+
+1. Write a shiny application with associated supporting documentation. The documentation should be thought of as whatever a user will need to get started using your application.
+2. Deploy the application on Rstudio's shiny server.
+3. Share the application link by pasting it into the provided text box
+4. Share your server.R and ui.R code on github
+
+## Overview My Application
+
+My application is to see daily closing prices of major european stock indices from 1991 to 1998. You can see fluctuations in stock prices over time. And You can choose daily closing prices with indices.
+
+And you can choose multiple indices. So You can compare fluctuations of daily closing prices by indices.
+
+## Shiny Application
+
+The application is running on
+
+- https://khj-lab.shinyapps.io/Shiny-Application-and-Reproducible-Pitch/
+
+My ui.R and server.R are here.
+
+- https://github.com/khj-lab/Shiny-Application-and-Reproducible-Pitch/tree/master/Shiny-Application-and-Reproducible-Pitch
+
+## Summary EuStockMarkets
+
+I use EuStockMarkets. Summary of data is below.
+
+```{r, echo = TRUE}
+summary(EuStockMarkets)
+```
+
