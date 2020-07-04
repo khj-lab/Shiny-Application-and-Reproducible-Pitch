@@ -7,6 +7,7 @@ shinyUI(fluidPage(
 
     sidebarLayout(
         sidebarPanel(
+            helpText("This application is to see daily closing prices of major european stock indices from 1991 to 1998. Choose indices you want to see."),
             checkboxGroupInput("indices", 
                         label = h3("Select Indices"), 
                         choices = list("DAX" = 1,
